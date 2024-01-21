@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+$primaryColor: #fff;
+$secondaryColor: #262a2f;
+$thirdColor: #494eea;
+$fourthColorrgba: rgba(0, 0, 0, 0.1);
+$fifthColor: #d1d1d1;
+
+$fontSize1: 15px;
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: $secondaryColor;
+    .container{
+        width: 400px;
+        padding: 25px 35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $primaryColor;
+        border-radius: 10px;
+        p{
+            font-weight: 600;
+            font-size: $fontSize1;  
+            margin-bottom: 8px;
+        }
+        input{
+            width: 100%;
+            height: 50px;
+            border: 1px solid $thirdColor;
+            outline: 0;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border-radius: 5px;
+        }
+        button{
+            width: 100%;
+            height: 50px;
+            background: $thirdColor;
+            color: $primaryColor;
+            border: 0;
+            outline: 0;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px $fourthColorrgba;
+            cursor: pointer;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+        #imgBox{
+            width: 200px;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 200px;
+            margin: 10px auto;
+            border: 1px solid $fifthColor;
+            img{
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+}
+
